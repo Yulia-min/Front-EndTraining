@@ -1,0 +1,18 @@
+.position {
+  display: flex;
+  justify-content: center;
+}
+.home__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+.home {
+  width: 80%;
+  margin-left: 10%;
+}
+.home__image {
+  width: 30%;
+  float: left;
+  margin: 1%;
+}

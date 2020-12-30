@@ -1,0 +1,90 @@
+.position{
+    display:flex;
+    justify-content: center;
+    }
+
+.border(@border:none){
+        border:@border;
+    }
+
+.size(@font__size:20px,@font__weight:600px){
+     font-size: @font__size;
+     font-weight: @font__weight;
+}
+
+@color: #29d1bb;
+.button {
+    color:@color - rgb(99, 84, 141);
+    background: -webkit-gradient(linear, left top, left bottom, from(@color), to(@color+#070c52 ));
+    background: -moz-linear-gradient(top,  @color ,  @color  );
+}
+
+.main{
+    color: @color + rgb(171, 216, 205);
+}
+
+.form {
+    .position;
+    margin-top: 40px;
+}
+
+.form>form {
+    max-width: 420px;
+    flex-grow: 1;
+    background-color:@color - #2f9e8c;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.form__title {
+    text-align: center;
+    color:@color - rgb(67, 50, 114);
+    margin-bottom: 40px;
+}
+
+.form__title>div:first-child {
+    .size;
+}
+
+.form__title>div:last-child {
+    margin-top: 8px;
+}
+
+.form__input {
+    .position;
+    .border;
+    background:@color + #78c0c5;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.form__input input {
+    .size(15px);
+    .border;
+    background: @color + #78c0c5;
+    outline: none;
+}
+
+.form__send {
+    .position;
+}
+
+.form__send>button {
+    .border;
+    .button; 
+    .size(18px);
+    background-color: @color + #78c0c5;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form__send>button:hover {
+   .border(1px solid rgb(222, 222, 238));
+    color:  @color + #704813;
+}

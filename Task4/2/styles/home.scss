@@ -1,0 +1,42 @@
+@each $cosmos in back2,
+back3 {
+    .#{$cosmos}__icon {
+        background-image: url(../img/#{$cosmos}.jpg);
+    }
+}
+
+@for $i from 1 to 3 {
+    .width__#{$i} {
+        width: 40% * $i;
+    }
+}
+
+$color:white;
+$color__2:rgb(81, 82, 122);
+.home__title {
+    margin-top: 0;
+}
+
+.home {
+    width: 80%;
+    margin-left: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: $color;
+    &:hover {
+        color: $color__2;
+    }
+}
+
+.home__image__1 {
+    width: 30%;
+    float: left;
+    margin: 1%;
+}
+
+.home__image__2 {
+    width: 40%;
+    float: right;
+}

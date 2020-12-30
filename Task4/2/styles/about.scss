@@ -1,0 +1,92 @@
+$color:rgb(61, 232, 238);
+$color__1:white;
+$color__2: #1a264e;
+$color__3:rgb(24, 211, 218);
+@mixin position() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin space($padding, $margin) {
+    @if ($padding>$margin) {
+        padding: $padding;
+    }
+}
+
+$index: 2;
+@while $index>0 {
+    .element__#{$index} {
+        width: 20% * $index;
+        color: $color__3;
+    }
+    $index: $index - 1;
+}
+
+.form {
+    @include position();
+    margin-top: 40px;
+}
+
+.form>form {
+    @include space(20px, 10px);
+    max-width: 420px;
+    flex-grow: 1;
+    background-color: $color__2;
+    border-radius: 3px;
+}
+
+.form__title {
+    text-align: center;
+    color: $color__1;
+    margin-bottom: 40px;
+}
+
+.form__title>div:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form__title>div:last-child {
+    margin-top: 8px;
+}
+
+.form__input {
+    @include position();
+    background: $color;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 15px;
+}
+
+.form__input input {
+    background: $color;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.form__send {
+    @include position();
+}
+
+.form__send>button {
+    border: none;
+    color: $color__2;
+    background-color: $color;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+        background-color: $color__2;
+        border: 1px solid $color;
+        color: $color__1;
+    }
+}

@@ -1,0 +1,84 @@
+.tabs {
+  padding: 50px;
+  width: 1000px;
+  margin: auto;
+}
+
+.tabs > input[type=radio] {
+  display: none;
+}
+
+.tabs__items {
+  display: flex;
+}
+
+.tabs__items > label {
+  padding: 20px;
+  text-decoration: none;
+  background-color: black;
+  background: linear-gradient(to top, #07183d 0%, #2a32a8 36%, #1d288f 100%);
+  color: #2d82d1;
+  cursor: pointer;
+}
+
+.tabs__body {
+  background-color: #07183d;
+}
+
+.tabs__block {
+  padding: 20px;
+  font-size: 18px;
+  display: none;
+}
+
+#tab_1:checked ~ .tabs__items > [for=tab_1],
+#tab_2:checked ~ .tabs__items > [for=tab_2],
+#tab_3:checked ~ .tabs__items > [for=tab_3] {
+  color: #2d82d1;
+  background: linear-gradient(to top, #081531 0%, #2d348f 36%, #38419b 100%);
+}
+
+#tab_1:checked ~ .tabs__body > .tab_1,
+#tab_2:checked ~ .tabs__body > .tab_2,
+#tab_3:checked ~ .tabs__body > .tab_3 {
+  display: block;
+}
+
+.table_item_01 th,
+.table_item_03 th {
+  font-size: 23px;
+  background: #1dcbd1;
+  color: #2d82d1;
+  padding: 8px;
+}
+
+.table_item_01 td,
+.table_item_03 td {
+  background: #1dcbd1;
+  color: black;
+  border-top: 1px solid transparent;
+  padding: 8px;
+  font-size: 23px;
+}
+
+.table_item_03 tr:nth-child(even) > td {
+  background-color: #2d82d1;
+}
+
+.table_item_03 td {
+  color: black;
+}
+
+.table_item_02 th {
+  border-bottom: 2px solid #2d82d1;
+  font-size: 23px;
+  color: white;
+  padding: 8px 2px;
+}
+
+.table_item_02 td {
+  font-size: 23px;
+  color: white;
+  padding-top: 12px;
+  padding-left: 2px;
+}

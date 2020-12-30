@@ -1,0 +1,43 @@
+.back2__icon {
+  background-image: url(../img/back2.jpg);
+}
+
+.back3__icon {
+  background-image: url(../img/back3.jpg);
+}
+
+.width__1 {
+  width: 40%;
+}
+
+.width__2 {
+  width: 80%;
+}
+
+.home__title {
+  margin-top: 0;
+}
+
+.home {
+  width: 80%;
+  margin-left: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #51527a;
+}
+
+.home__image__1 {
+  width: 30%;
+  float: left;
+  margin: 1%;
+}
+
+.home__image__2 {
+  width: 40%;
+  float: right;
+}

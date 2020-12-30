@@ -1,0 +1,66 @@
+$gradient:linear-gradient(to bottom, #03043f 0%, #0b1250 36%, #232172 100%);
+$color:rgb(45, 143, 146);
+$gradient__1:linear-gradient(to bottom, #1d1e6d 0%, #343d8f 36%, #4e4cb1 100%);
+$color__2:rgb(41, 223, 230);
+@mixin position() {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background-image: url(../img/back.jpg);
+}
+
+.header {
+    @include position();
+    @include size();
+    padding: 0 15px;
+    background: $gradient;
+    height: 60px;
+}
+
+.header__logo {
+    @include position();
+    font-weight: bold;
+    height: 30px;
+    font-size: 30px;
+    color: $color__2;
+}
+
+.header__logo>img {
+    width: 40px;
+}
+
+.header__logo>div {
+    margin-left: 10px;
+}
+
+.header__menu>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $color;
+    padding: 21.2px;
+    transition: 0.5s ease;
+    &:hover {
+        color: $color__2;
+        background: $gradient__1;
+    }
+}
+
+.main {
+    min-height: calc(100vh - 150px);
+    padding: 15px;
+    color: $color;
+}
+
+.footer {
+    @include position();
+    color: $color__2;
+    height: 60px;
+    background: $gradient;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 15px;
+}

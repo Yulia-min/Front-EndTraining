@@ -1,0 +1,147 @@
+.calculator {
+    width: 425px;
+    height: 600px;
+    margin-left: 35%;
+}
+
+.header {
+    height: 150px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: black;
+    text-align: right;
+    border: 3px ridge rgb(56, 58, 59);
+}
+
+.account {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+}
+
+.result {
+    width: 100%;
+    margin-top: 18px;
+    text-align: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 60px;
+}
+
+.main {
+    height: 500px;
+    display: table;
+    background-color: black;
+    border: 3px ridge rgb(56, 58, 59);
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    margin: 6px;
+    width: 92px;
+    height: 92px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(56, 58, 59);
+    font-size: 22px;
+    outline: none;
+}
+
+.btn__result {
+    color: white;
+    background-color: rgb(33, 177, 33);
+    border-radius: 25px;
+    border: 2px solid rgb(56, 58, 59);
+    margin: 6px;
+    width: 92px;
+    height: 92px;
+    text-align: center;
+    font-size: 22px;
+    outline: none;
+}
+
+.btn__history {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px solid rgb(56, 58, 59);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    outline: none;
+    float: left;
+}
+
+.btn__backspace {
+    display: table-row;
+    color: rgb(16, 204, 16);
+    background-color: black;
+    border: none;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    outline: none;
+}
+
+.btn__symbol {
+    color: rgb(16, 204, 16);
+    background-color: black;
+    margin: 6px;
+    width: 92px;
+    height: 92px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(56, 58, 59);
+    font-size: 22px;
+    outline: none;
+}
+
+.btn__clear {
+    color: rgb(204, 110, 21);
+    background-color: black;
+    margin: 6px;
+    width: 92px;
+    height: 92px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(56, 58, 59);
+    font-size: 22px;
+    outline: none;
+}
+
+.btn:hover,
+.btn__symbol:hover,
+.btn__clear:hover,
+.btn__history:hover {
+    filter: brightness(85%);
+    color: rgb(30, 199, 30);
+    background: rgb(25, 28, 29);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn__result:hover {
+    filter: brightness(85%);
+    color: rgb(11, 82, 11);
+    background: rgb(18, 138, 13);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn__backspace:hover {
+    filter: brightness(85%);
+    color: rgb(176, 236, 12);
+    background: rgb(35, 44, 35);
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 50px;
+}

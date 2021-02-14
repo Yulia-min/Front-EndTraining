@@ -1,0 +1,5 @@
+data = {
+    "h1": { "textContent": "Защита работы", "style": { "color": "blue" } },
+    "p": { "innerHTML": "просто текст", "style": { "color": "red", "text-align": "center" } },
+    "ul": { "innerHTML": "<li>First</li><li>Second</li><li>Third</li>", "style": { "color": "green" } }
+}

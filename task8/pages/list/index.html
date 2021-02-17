@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <form class="creation-form">
+            <input type="text" class="title" placeholder="Input title">
+
+            <textarea class="textarea" cols="30" rows="10" placeholder="Input description"></textarea>
+
+            <input type="date" class="time">
+
+            <input type="time" class="time">
+
+            <div class="file">
+                <div>File</div>
+
+                <label>
+                    <input type="radio" name="dataFile" value="0" checked>
+                    1                    
+                </label>
+
+                <label>
+                    <input type="radio" name="dataFile" value="1">
+                    2                  
+                </label>
+
+                <label>
+                    <input type="radio" name="dataFile" value="2">
+                    3
+                </label>
+            </div>
+
+            <div class="priority">
+                <div>Priority</div>
+
+                <label>
+                    <input type="radio" name="status" value="0" checked>
+                    Low
+                </label>
+
+                <label>
+                    <input type="radio" name="status" value="1">
+                    Middle                 
+                </label>
+
+                <label>                    
+                    <input type="radio" name="status" value="2">
+                    Hight
+                </label>
+
+                <label>                
+                    <input type="radio" name="status" value="3">
+                    Critical
+                </label>
+            </div>
+
+            <button type="submit" class="creation-form__submit">Create</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="notes-section"></section>
+
+    <section class="notes-section"></section>
+
+    <section class="notes-section"></section>
+
+    <section class="status-section">
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+    </section>
+
+    <section></section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

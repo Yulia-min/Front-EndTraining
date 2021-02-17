@@ -1,0 +1,33 @@
+.status-section>div {
+    margin-top: 20px;
+}
+
+.notes-section {
+    margin-top: 20px;
+}
+
+.textarea {
+    display: flex;
+    margin: 5px;
+}
+
+.title {
+    display: flex;
+    margin: 5px;
+}
+
+.time {
+    margin: 5px;
+}
+
+.creation-form__submit {
+    margin: 10px;
+}
+
+.file {
+    margin: 5px;
+}
+
+.priority {
+    margin: 5px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "dependences",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yulia-min/Summer-EpamTraining.git"
+  },
+  "author": "Yulia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yulia-min/Summer-EpamTraining/issues"
+  },
+  "homepage": "https://github.com/Yulia-min/Summer-EpamTraining#readme",
+  "dependencies": {
+    "is-thirteen": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  }
+}

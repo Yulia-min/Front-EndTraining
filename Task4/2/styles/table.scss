@@ -1,0 +1,91 @@
+$color: rgb(45, 130, 209);
+$color__1:black;
+$color__2:white;
+$color__3:rgb(29, 203, 209);
+$color__4:#07183d;
+$gradient:linear-gradient(to top, #07183d 0%, #2a32a8 36%, #1d288f 100%);
+$gradient__1:linear-gradient(to top, #081531 0%, #2d348f 36%, #38419b 100%);
+.tabs {
+    padding: 50px;
+    width: 1000px;
+    margin: auto;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs__items {
+    display: flex;
+}
+
+.tabs__items>label {
+    padding: 20px;
+    text-decoration: none;
+    background-color: $color__1;
+    background: $gradient;
+    color: $color;
+    cursor: pointer;
+}
+
+.tabs__body {
+    background-color: $color__4;
+}
+
+.tabs__block {
+    padding: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+#tab_1:checked~.tabs__items>[for=tab_1],
+#tab_2:checked~.tabs__items>[for=tab_2],
+#tab_3:checked~.tabs__items>[for=tab_3] {
+    color: $color;
+    background: $gradient__1;
+}
+
+#tab_1:checked~.tabs__body>.tab_1,
+#tab_2:checked~.tabs__body>.tab_2,
+#tab_3:checked~.tabs__body>.tab_3 {
+    display: block;
+}
+
+.table_item_01 th,
+.table_item_03 th {
+    font-size: 23px;
+    background: $color__3;
+    color: $color;
+    padding: 8px;
+}
+
+.table_item_01 td,
+.table_item_03 td {
+    background: $color__3;
+    color: $color__1;
+    border-top: 1px solid transparent;
+    padding: 8px;
+    font-size: 23px;
+}
+
+.table_item_03 tr:nth-child(even)>td {
+    background-color: $color;
+}
+
+.table_item_03 td {
+    color: $color__1;
+}
+
+.table_item_02 th {
+    border-bottom: 2px solid $color;
+    font-size: 23px;
+    color: $color__2;
+    padding: 8px 2px;
+}
+
+.table_item_02 td {
+    font-size: 23px;
+    color: $color__2;
+    padding-top: 12px;
+    padding-left: 2px;
+}

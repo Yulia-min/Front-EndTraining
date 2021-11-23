@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/about.css">
+</head>
+
+<body vocab="http://schema.org/">
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/logo.jpg">
+            <div>Universe</div>
+        </div>
+        <nav class="header__menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="table.html">Table</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <aside typeof="Person">
+            <div property="name"></div> Юлия Клепицкая </div>
+            <divp roperty="jobTitle"> Cтудент 3 курса ГГТУ им П.О.Сухого</div>
+                <div property="telephone"> Мой телефон:+375(29)512-62-82</div>
+                <div property="email">Почта: gallavich66@gmail.com </div>
+                <div property="address" typeof="PostalAddress"> Адрес:
+                    <div class="addressLocality"> г.Гомель</div>
+                    <div class="streetAddress">Проспект Речицкий 135</div>
+                </div>
+        </aside>
+
+        <div class="form">
+            <form>
+                <div class="form__title">
+                    <div>Оставьте заявку</div>
+                    <div>Автор с Вами свяжется</div>
+                </div>
+
+                <div class="form__input">
+                    <input type="text" placeholder="Введите Ваше имя">
+                </div>
+
+                <div class="form__input">
+                    <input type="text" placeholder="Введите Ваш телефон">
+                </div>
+
+                <div class="form__send">
+                    <button type=submit>Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer" typeof="CreativeWork">
+        <div property="author">&copy Клепицкая Юлиана Дмитриевна</div>
+        <div class="footer__date"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
